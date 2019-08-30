@@ -1,5 +1,5 @@
 export class Portrait {
-  constructor (avatar_url: string, name: string, login: string, public_repos: number,
-    created_at: Date){
+  constructor (public image: string, public theName: string, public theLogin: string, public followers: number, public following: number, public repositories: number,
+    public theDate:Date){
   }
 }
