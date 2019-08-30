@@ -4,11 +4,13 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UtilizersPortraitComponent } from './utilizers-portrait/utilizers-portrait.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UtilizersPortraitComponent
+    UtilizersPortraitComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
