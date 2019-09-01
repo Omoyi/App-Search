@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Portrait } from '../portrait-class/portrait';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient } from '@angular/common/http';
+import { PortraitService } from '../portrait.service';
+
+
 @Component({
   selector: 'app-utilizers-portrait',
   templateUrl: './utilizers-portrait.component.html',
@@ -9,7 +12,9 @@ import { HttpClient } from '@angular/common/http'
 export class UtilizersPortraitComponent implements OnInit {
   
   profile: Portrait;
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) { 
+    
+  }
 
   ngOnInit() {
     interface ApiResult{
