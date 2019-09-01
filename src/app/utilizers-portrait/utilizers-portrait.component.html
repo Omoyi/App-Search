@@ -1,14 +1,25 @@
-<div class="search">
-  <input type="search" class="search-box" />
-  <span class="search-button">
-    <span class="search-icon"></span>
-  </span>
-  <img src="{{profile.image}}">
-<p class="mb-0">{{profile.theName}}</p>
-<p class="mb-0">{{profile.theLogin}}</p>
-<p class="mb-0">{{profile.followers}}</p>
-<p class="mb-0">{{profile.following}}</p>
-<p class="mb-0">{{profile.repositories}}</p>
-<p class="mb-0">{{profile.theDate}}</p>
+<div id="cover">
+  <form method="get" action="">
+    <div class="tb">
+      <div class="td"><input type="text" placeholder="Search" required></div>
+      <div class="td" id="s-cover">
+        <button type="submit">
+          <div id="s-circle"></div>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </form>
 </div>
+<div class="container">
+  <img src="{{profile.image}}">
+  <p class="mb-0">{{profile.theName}}</p>
+  <p class="mb-0">{{profile.theLogin}}</p>
+  <p class="mb-0">{{profile.followers}}</p>
+  <p class="mb-0">{{profile.following}}</p>
+  <p class="mb-0">{{profile.repositories}}</p>
+  <p class="mb-0">{{profile.theDate}}</p>
+</div>
+
+
 <!-- <ng-progress></ng-progress> -->
