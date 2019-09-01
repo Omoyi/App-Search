@@ -1,8 +1,16 @@
 h1 {
+  background-image: url(https://loveincorporated.blob.core.windows.net/contentimages/gallery/bde3cc55-940e-4c7d-bd65-18ba689ddb65-984f5cee-6c34-4417-8a0f-fb349f56dae2-Woodchip-and-Magnolia,-Flow-Marble-Effect-Blush.jpg);
   font-family: 'Shojumaru', cursive;
-  color: white;
+  color: rgb(44, 16, 0);
 }
 
 body {
-  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/868be5a2-b3e4-40eb-a8ce-4f8bc799f7b8/d5iouxz-5af534ba-463d-4bbe-9f5e-a071188a5ee1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg2OGJlNWEyLWIzZTQtNDBlYi1hOGNlLTRmOGJjNzk5ZjdiOFwvZDVpb3V4ei01YWY1MzRiYS00NjNkLTRiYmUtOWY1ZS1hMDcxMTg4YTVlZTEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vMjG1TpjpOjzcrbOlpjrIWMIase74UVilo-POttkY8k);
+  background-image: url(https://images.unsplash.com/photo-1527239441953-caffd968d952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
+
+/* .body {
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/868be5a2-b3e4-40eb-a8ce-4f8bc799f7b8/d5iouxz-5af534ba-463d-4bbe-9f5e-a071188a5ee1.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg2OGJlNWEyLWIzZTQtNDBlYi1hOGNlLTRmOGJjNzk5ZjdiOFwvZDVpb3V4ei01YWY1MzRiYS00NjNkLTRiYmUtOWY1ZS1hMDcxMTg4YTVlZTEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vMjG1TpjpOjzcrbOlpjrIWMIase74UVilo-POttkY8k);
+} */

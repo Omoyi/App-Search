@@ -1,19 +1,20 @@
 <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Julius+Sans+One|Shojumaru&display=swap" rel="stylesheet">
 <div class="home">
   <form id="search">
-    <input type="search" placeholder="Search">
+    <input type="search" placeholder="Search" (click)=getGithubUser()>
   </form>
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-GEbbvK7xMSAbzpMHY9H0K3PEZutZJ8GGCvYETDcu0vrf5CLc" class="image">
 </div>
 <br><br><br><br><br>
 <div class="container">
   <img src="{{profile.image}}">
-  <p class="mb-0">GitHub Username: {{profile.theName}}</p>
-  <p class="mb-0">Login: {{profile.theLogin}}</p>
-  <p class="mb-0">Followers: {{profile.followers}}</p>
-  <p class="mb-0">Following: {{profile.following}}</p>
-  <p class="mb-0">Repositories: {{profile.repositories}}</p>
-  <p class="mb-0">Date {{profile.theDate}}</p>
+  <p class="mb-0"><b>GitHub Username:</b> {{profile.theName}}</p>
+  <p class="mb-0"><b>Login:</b> {{profile.theLogin}}</p>
+  <p class="mb-0"><b>Followers:</b> {{profile.followers}}</p>
+  <p class="mb-0"><b>Following:</b> {{profile.following}}</p>
+  <p class="mb-0"><b>Repositories:</b> {{profile.repositories}}</p>
+  <p class="mb-0"><b>Was created :</b> {{profile.theDate|date}}</p><br>
+  <a href="{{profile.html_url}}"></a><button>Go to the repository</button>
 </div>
 
 

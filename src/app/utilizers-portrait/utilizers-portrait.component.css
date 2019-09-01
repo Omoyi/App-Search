@@ -6,7 +6,9 @@
 p {
   font-size: 20px;
   font-family: 'Julius Sans One', sans-serif;
-  color: #66CC75;
+  color: rgb(32, 0, 0);
+  margin-bottom: 2%;
+
 }
 
 .image {
@@ -74,7 +76,7 @@ input::-webkit-input-placeholder {
 
 #search { 
   display:inline-block;
-  margin-left: 30%; 
+  margin-left: 25%; 
 }
 #search input[type=search] {
 
@@ -89,4 +91,12 @@ input::-webkit-input-placeholder {
   color: #4a83c0;
   background-color: #fff;
   cursor: auto;
+}
+
+button {
+  border-radius: 50px;
+  background-color: rgb(247, 143, 74);
+}
+button :focus {
+  outline: none;
 }
