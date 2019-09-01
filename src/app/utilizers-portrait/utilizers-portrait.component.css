@@ -3,6 +3,12 @@
    */
 } 
 
+p {
+  font-size: 20px;
+  font-family: 'Julius Sans One', sans-serif;
+  color: #66CC75;
+}
+
 .image {
   border-radius: 50%;
 }
