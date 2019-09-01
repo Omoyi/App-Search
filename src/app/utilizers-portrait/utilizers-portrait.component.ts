@@ -11,9 +11,13 @@ import { PortraitService } from '../portrait.service';
 })
 export class UtilizersPortraitComponent implements OnInit {
   
-  profile: Portrait;
+  portrait: Portrait;
+  userName : string;
+  profile: any;
+  
+
   constructor(private http:HttpClient) { 
-    
+
   }
 
   ngOnInit() {
