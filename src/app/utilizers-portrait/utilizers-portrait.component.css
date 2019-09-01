@@ -235,7 +235,10 @@ input::-webkit-input-placeholder {
 }
 
 
-#search { display:inline-block;}
+#search { 
+  display:inline-block;
+  margin-left: 40%; 
+}
 #search input[type=search] {
 
   cursor: pointer;
