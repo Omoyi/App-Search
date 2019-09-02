@@ -21,7 +21,7 @@ export class UtilizersPortraitComponent implements OnInit {
   }
 
   ngOnInit() {
-    interface ApiResult{
+    interface ApiKey{
       avatar_url: string;
       name: string;
       login: string;
@@ -32,7 +32,7 @@ export class UtilizersPortraitComponent implements OnInit {
       
     }
     
-    this.http.get<ApiResult>("https://api.github.com/users/omoyi?access_token=8b578fc35c124b9560a47189aea912a380b7ecb6").subscribe(data=>{
+    this.http.get<ApiKey>("https://api.github.com/users/omoyi?access_token=8b578fc35c124b9560a47189aea912a380b7ecb6").subscribe(data=>{
       // Succesful API request
       this.profile = new Portrait(data.avatar_url,data.name, data.login, data.followers, data.following, data.public_repos, data.created_at);
     })

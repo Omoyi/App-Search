@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
+    "@ngx-progressbar/core": "^3.0.2",
+    "@ngx-progressbar/http-client": "^3.0.2",
     "bootstrap": "^4.3.1",
     "popper": "^1.0.1",
     "rxjs": "~6.4.0",
