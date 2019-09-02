@@ -12,31 +12,28 @@ import { PortraitService } from '../portrait.service';
 export class UtilizersPortraitComponent implements OnInit {
   
   portrait: Portrait;
-  userName : string;
+  userName : string = "";
   profile: any;
   
 
-  constructor(private http:HttpClient) { 
+  constructor(private http:HttpClient, private portraitService: PortraitService) { 
 
   }
 
   ngOnInit() {
-    interface ApiKey{
-      avatar_url: string;
-      name: string;
-      login: string;
-      followers: number;
-      following: number;
-      public_repos: number;
-      created_at: Date
-      
-    }
-    
-    this.http.get<ApiKey>("https://api.github.com/users/omoyi?access_token=8b578fc35c124b9560a47189aea912a380b7ecb6").subscribe(data=>{
-      // Succesful API request
-      this.profile = new Portrait(data.avatar_url,data.name, data.login, data.followers, data.following, data.public_repos, data.created_at);
-    })
+    this.portraitService.getRepoInfo(this.userName);
+    this.repos = this.profileService.repo;
+    this.profileService.getUserInfo();
+    this.user = this.profileService.user;
 
+    }
+ 
+  getGithubUser(){
+    this.http.get('https://api.github.com/users/' + this.userName)
+    .subscribe((response) => {
+      this.profile = response;
+      console.log(this.profile); 
+    })
   }
 
 }
