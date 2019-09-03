@@ -8,21 +8,26 @@ import { DateCountPipe } from './date-count.pipe';
 import { PortraitService } from 'src/app/portrait.service';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
+import { TheUserComponent } from './the-user/the-user.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     UtilizersPortraitComponent,
-    DateCountPipe
+    DateCountPipe,
+    TheUserComponent,
+    DateCountPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
     NgProgressModule.forRoot(),
     NgProgressHttpClientModule
   ],
-  providers: [],
+  providers: [PortraitService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

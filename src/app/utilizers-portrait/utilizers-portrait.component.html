@@ -1,21 +1,72 @@
-<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Julius+Sans+One|Shojumaru&display=swap" rel="stylesheet">
-<div class="home">
-  <form id="search">
-    <input type="search"  placeholder="Search" (click)="getGithubUser()">
-  </form>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-GEbbvK7xMSAbzpMHY9H0K3PEZutZJ8GGCvYETDcu0vrf5CLc" class="image">
-</div>
-<br><br><br><br><br>
-<div class="container">
-  <img src="{{profile.image}}">
-  <p class="mb-0"><b>GitHub Username:</b> {{profile.theName}}</p>
-  <p class="mb-0"><b>Login:</b> {{profile.theLogin}}</p>
-  <p class="mb-0"><b>Followers:</b> {{profile.followers}}</p>
-  <p class="mb-0"><b>Following:</b> {{profile.following}}</p>
-  <p class="mb-0"><b>Repositories:</b> {{profile.repositories}}</p>
-  <p class="mb-0"><b>Was created :</b> {{profile.theDate|date}}</p><br>
-  <a href="{{profile.html_url}}"><button>Go to the repository</button></a>
-</div>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
 
+  <form (keyup)="getGithubUser()" #userForm="ngForm">
+    <div class="form-group">
 
-<ng-progress></ng-progress>
+        <input type="text" placeholder="Search User" [(ngModel)]="userName" name="userName">
+    </div>
+    <button type="Submit" class="btn btn-success btn-lg">Find a User</button>
+</form>
+
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title" >{{ portrait.login}}</h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-3 col-lg-3 " > <img alt="User Pic" src="{{ portrait.avatar_url }}" class="img-circle img-responsive"> </div>
+
+        <div class=" col-md-9 col-lg-9 ">
+          <table class="table table-user-information">
+            <tbody>
+              <tr>
+                <td>Full Name: </td>
+                <td>{{ portrait.name}}</td>
+              </tr>
+              <tr>
+                <td>Repositories:</td>
+                <td>
+                  <tr>
+                    <td>
+                      {{portrait.repos_url}}
+                    </td>
+                    <td>
+                        <a href="{{portrait.repo_url}}" class="btn btn-primary">View All</a>
+                    </td>
+                  </tr>
+
+                </td>
+
+              </tr>
+              <tr>
+                <td>Followers</td>
+                <td>{{ portrait.followers_url }}</td>
+              </tr>
+
+                 <tr>
+                     <tr>
+                <td>Following</td>
+                <td>{{ portrait.following_url}}</td>
+              </tr>
+                <tr>
+                <td>Created</td>
+                <td>{{portrait.createdAt | timeAgo}}</td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td appUser="">{{ portrait.email }}</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <a href="{{user.repo_url}}" class="btn btn-primary">View User on Github</a>
+        </div>
+      </div>
+    </div>
+         <div class="panel-footer">
+           <p style="font-size: 12px;">Powered by GithubAPI</p>
+            </div>
+
+  </div>
+</div>                                                                                              
