@@ -7,8 +7,8 @@ import { ViewComponent } from 'src/app/view/view.component';
 
 const routes: Routes = [
   { path: '', component: ViewComponent},
-  { path: 'user/repositories?', component: UtilizersPortraitComponent},
-  { path: 'userprofile?', component: TheUserComponent},
+  { path: 'user/repositories?', component: TheUserComponent},
+  { path: 'userprofile?', component: UtilizersPortraitComponent},
 ];
 
 @NgModule({
