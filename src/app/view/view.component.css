@@ -88,8 +88,6 @@ a:after {
   border-color: #444;
 }
 
-/* Nav */
-
 a.navbar-brand {
 	color: #fff !important;
 	font-weight: 900;
@@ -99,16 +97,14 @@ a.navbar-brand:hover {
     color: #ddd !important;
 }
 
-/* Header */
-
 #header {
 	background-color: #444;
-	background: url(https://www.thebestdesigns.com/design-images/moonfarmer_0009_1.jpg) no-repeat center top;
+	background: url(https://img2.goodfon.com/wallpaper/nbig/9/19/steklo-kapli-dozhd-solnce.jpg) no-repeat center top;
 	margin-top: -20px;
 	padding-top: 150px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 850px;
 	width: 100%;
 
     -webkit-background-size: 100%;

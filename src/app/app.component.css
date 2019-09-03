@@ -4,7 +4,7 @@ body {
   background-color: #f2f2f2;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 25px;
     line-height: 1.6em;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -36,7 +36,7 @@ p {
 
 
 a {
-    color: #419641;
+    color: #719641;
     word-wrap: break-word;
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -45,11 +45,11 @@ a {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 .nav-item .nav-link{
-  color: #419641;
+  color: #df7700;
 }
 a:hover,
 a:focus {
-    color: #b7cb1b;
+    color: #cb441b;
     text-decoration: none;
     outline: 0;
 }

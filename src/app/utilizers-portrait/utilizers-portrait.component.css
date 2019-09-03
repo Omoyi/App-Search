@@ -1,22 +1,41 @@
-.profImg{
-  border-radius: 50%;
-
+.search{
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
 }
 
 input[type=text] {
   width: 130px;
   box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
+  border: none;
+  border-radius: 10px;
   font-size: 16px;
   background-color: white;
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  padding: 12px 8px 12px 20px;
+  padding: 12px 20px 12px 40px;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
+  -moz-appearance:none;
+  -webkit-appearance:none;
 }
 
 input[type=text]:focus {
   width: 100%;
+}
+ input:focus{
+   outline: none;
+ }
+
+.panel-footer{
+  text-align: center;
+}
+
+.img {
+  border-radius: 30px;
 }

@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Repository } from 'src/app/repository'
 import {Portrait} from 'src/app/portrait-class/portrait'
 import { environment }  from 'src/environments/environment'
-import { map, catchError, retry } from 'rxjs/operators';
 
 
 @Injectable({
@@ -78,8 +77,6 @@ export class PortraitService {
           .toPromise()
           .then(response_repo => {
             this.newRepos = response_repo;
-            // console.log(this.newRepos);
-           
             resolve();
       },
       
