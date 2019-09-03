@@ -103,7 +103,7 @@ a.navbar-brand:hover {
 
 #header {
 	background-color: #444;
-	background: url(/../assets/main-bg.jpg) no-repeat center top;
+	background: url(https://www.thebestdesigns.com/design-images/moonfarmer_0009_1.jpg) no-repeat center top;
 	margin-top: -20px;
 	padding-top: 150px;
 	background-attachment: relative;
@@ -181,8 +181,8 @@ h2.subtitle {
   background-repeat: repeat-x;
 }
 .progress-bar-success {
-  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);
-  background-image:         linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
+  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #4d1305 100%);
+  background-image:         linear-gradient(to bottom, #b88d5c 0%, #9d6544 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff449d44', GradientType=0);
   background-repeat: repeat-x;
 }
