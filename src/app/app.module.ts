@@ -10,6 +10,7 @@ import { NgProgressModule } from '@ngx-progressbar/core';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { TheUserComponent } from './the-user/the-user.component';
 import { FormsModule } from '@angular/forms';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FormsModule } from '@angular/forms';
     DateCountPipe,
     TheUserComponent,
     DateCountPipe,
+    ViewComponent,
   ],
   imports: [
     BrowserModule,
