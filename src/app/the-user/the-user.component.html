@@ -1,1 +1,41 @@
-<p>the-user works!</p>
+<div class="container-fluid">
+    <body>
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-6 offset-md-2">
+
+    <form (keyup)="getGithubUser()" #userForm="ngForm">
+      <div class="form-group">
+          <input type="text" placeholder="Search Repositories" [(ngModel)]="userName" name="userName">
+      </div>
+  </form>
+            </div>
+          </div>
+                <div  *ngIf="portraitService.newRepo">
+                <h1>Repositories</h1>
+      <div class="row m-,0 p-ocol-container">
+          <div class="col-container col-md-4 col card mb-5" *ngFor='let repository of portraitService.newRepo'>
+              <div class="card-header">
+                  <a href="{{repository.html_url}}" target="_blank" >{{repository.name}}</a>
+              </div>
+              <div class="card-body">
+                  <p ><span style="color: rgb(140, 182, 85)">Description:</span>  <br>{{repository.description}}</p>
+              </div>
+            </div>
+      </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </body>
+
+
+
+</div>
