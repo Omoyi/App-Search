@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Repository } from 'src/app/repository'
 import {Portrait} from 'src/app/portrait-class/portrait'
 import { environment }  from 'src/environments/environment'
+import { map, catchError, retry } from 'rxjs/operators';
 
 
 @Injectable({
@@ -40,7 +41,7 @@ export class PortraitService {
 
     let promise = new Promise(((resolve, reject) => {
       this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName +
-      '?access_token=' + environment.ApiKey)
+      '?access_token=' + environment.apiKey)
 
       .toPromise().then(response => {
         this.portrait.login = response.login;
@@ -73,16 +74,18 @@ export class PortraitService {
     
         }
         let promise = new Promise(( (resolve, reject) => {
-          this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName + '/repos?access_token=' + environment.ApiKey)
+          this.http.get<ApiResponse>('https://api.github.com/users/' + this.userName + '/repos?access_token=' + environment.apiKey)
           .toPromise()
           .then(response_repo => {
             this.newRepos = response_repo;
             // console.log(this.newRepos);
-    
+           
             resolve();
       },
+      
       error => {
         reject(error);
+      
       }
     );
     }));

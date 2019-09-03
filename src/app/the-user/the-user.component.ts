@@ -19,7 +19,7 @@ export class TheUserComponent implements OnInit {
   userName : string;
   
 
-  constructor(private http:HttpClient, private portraitService: PortraitService) { 
+  constructor(private http:HttpClient, public portraitService: PortraitService) { 
 
   }
 
